@@ -15,10 +15,4 @@ jobs:
 
       - name: List files
         run: |
-         git touch hi
-         git add.
-         git commit -m "dd"
-         git push origin master
-         
-      
-          
+          ls -al
