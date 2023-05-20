@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Example</title>
+  <style>
+    /* CSS styles */
+    .container {
+      text-align: center;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Click the Button</h1>
+    <button id="press-me">Press Me</button>
+    <div id="image-container"></div>
+  </div>
+
+  <script>
+    // JavaScript code
+    // Get the button element
+    const button = document.getElementById('press-me');
+
+    // Add a click event listener to the button
+    button.addEventListener('click', () => {
+      // Create a new image element
+      const image = new Image();
+
+      // Set the source of the image
+      image.src = './img/image.png'; // Replace 'image.jpg' with the name of your image file
+
+      // Append the image to the container element
+      const container = document.getElementById('image-container');
+      container.appendChild(image);
+    });
+  </script>
+</body>
+</html>
+
